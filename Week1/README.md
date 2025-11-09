@@ -1,6 +1,6 @@
 # Introduction
 
-# What is MLOps?
+## What is MLOps?
 
 Machine Learning engineering is not just about running experiments, but to realize its value in the real world scenarios. MLOps is a set of principles and practices for efficient management of end-to-end ML lifecycle from experiments to productionization.
 
@@ -19,10 +19,13 @@ Note: I am on Windows Laptop, hence all the configurations done locally are pert
 ## Step 1: Spin up EC2 Instance
 
 - Go to AWS Console to spin up an EC2 instance of Ubuntu flavour of t2.xlarge size.
+- 32 Gb Storage
 - Download the secret access keys (.pem file)
 - Take a note of the public IP
 
 ## Step 2: Connect to Ubuntu EC2 server
+
+`ssh -a "D:\Work\ML\MLOps\Demo\llm-zoomcamp.pem" ubuntu@<IPADDRESS>`
 
 - [Optional] Move .pem secret access keys file to .ssh folder in home directory
 - Execute the following command from .ssh directory to change the permission of .pem file to protect it
@@ -119,6 +122,7 @@ Now run `ssh short-name-of-your-choice` to quickly connect to the ubuntu server.
 
   ```
   wget https://github.com/docker/compose/releases/download/v2.40.3/docker-compose-linux-x86_64
+  mv docker-compose-linux-x86_64 docker-compose
   chmod -x docker-compose
   ```
 
@@ -139,17 +143,29 @@ Now run `ssh short-name-of-your-choice` to quickly connect to the ubuntu server.
   sudo docker run hello-world
 ```
 
-### VS Code Setup
+### VS Code Setup in Windows
 
 - Install "Remote - SSH" extension in VS Code
 - Click on "Open a Remote Window" icon on bottom-left corner
 - From dropdown select "Connect to Host" and then select Linux. That opens a new VSCode window.
 
-  - Permission issue fix terminal in windows 'PowerShell run as Admin'
+- `config` file
+
+  - file path
+    `C:\Users\risar\.ssh`
+
+  - contents
+
+```
+ Host llm-zoom
+   HostName 3.144.152.102
+   IdentityFile D:\Work\ML\MLOps\Demo\key\llm-zoomcamp.pem
+   User ubuntu
+```
+
+- Permission issue fix terminal in windows 'PowerShell run as Admin'
 
 ```bash
-
-
 
 # Replace 'path\to\your\key.pem' with the actual path to your file
 
@@ -169,8 +185,6 @@ icacls.exe "$pemFilePath" /grant:r "$($env:username):(F)"
 ## icacls.exe "$pemFilePath" /remove:g "Authenticated Users" BUILTIN\Administrators BUILTIN Everyone System Users
 
 ```
-
-asd
 
 ```bash
 
