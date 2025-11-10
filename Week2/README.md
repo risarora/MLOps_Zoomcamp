@@ -108,7 +108,7 @@ Install the required packages listed in requirements.txt file.
 `pip install -r requirements.txt`
 
 mlflow comes with a CLI
-![mlflowcli](/img/mlflowcli.png)
+![mlflowcli](./img/mlflowcli.png)
 
 We can launch mlflow ui as well. Run the following command to start mlflow ui (a gunicorn server) connected to the backend sqlite database.  
 `mlflow ui --backend-store-uri sqlite:///mlflow.db`
@@ -156,10 +156,10 @@ Just like mlflow tracking server tracks all the experiments, in similar fashion 
 
 MLflow Model Registry allows to assign the registered model to any of stages - Stage, Production and Archive. While registering a model to Model Registry, a new model name can be added or an existing one can be selected. If an existing one is selected, a new version of the model is created automatically.
 
-![5registermodel](/img/5registermodel.png)
-![5registermodel2](/img/5registermodel2.png)
-![5registermodel3](/img/5registermodel3.png)
-![5registermodel4](/img/5registermodel4.png)
+![5registermodel](./img/5registermodel.png)
+![5registermodel2](./img/5registermodel2.png)
+![5registermodel3](./img/5registermodel3.png)
+![5registermodel4](./img/5registermodel4.png)
 
 All these activities can be performed on UI as well as with the Python APIs provided by mlflow client.
 
