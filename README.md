@@ -2,6 +2,8 @@
 
 Free MLOps course run by DataTalksClub. The program comprises seven modules followed by a capstone project as mentioned below and spans across several months.
 
+[Coure Playlist](https://www.youtube.com/playlist?list=PL3MmuxUbc_hIUISrluw_A7wDSmfOhErJK)
+
 - Module 1: Introduction
 
   - What is MLOps
@@ -12,7 +14,7 @@ Free MLOps course run by DataTalksClub. The program comprises seven modules foll
   - Environment preparation
   - Homework
 
-  [Week1: Notes, code and assignment](/Week1/)
+  [Week1: Notes, code and assignment](./Week1/)
 
   ![](/Week1/imgs/neptune-mlops.png "Source: Neptune.ai")
     <p align = "center">
@@ -29,7 +31,7 @@ Free MLOps course run by DataTalksClub. The program comprises seven modules foll
   - MLflow in practice
   - Homework
 
-  [Week2: Notes, code and assignment](/Week2)
+  [Week2: Notes, code and assignment](./Week2/)
 
   ![](/Week2/img/experiment-tracking-mlops-v3.png)
 
