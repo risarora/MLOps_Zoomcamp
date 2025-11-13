@@ -320,21 +320,33 @@ Welcome everyone. In this video, we explore _model management_ within the machin
 
 ![alt text](./img/ModelRegistery.png)
 
-> [!NOTE]
-> _Model Regisrty_ Just lists the models. Need CI/CD to actually deply the models
+> [!NOTE] > _Model Regisrty_ Just lists the models. Need CI/CD to actually deply the models
 
 Just like mlflow tracking server tracks all the experiments, in similar fashion model registry tracks the models that are registered for productionization. Models from the runs in an experiment as saved using either mlflow.log_artifact or mlflow.log_model. Moreover, Auto log option also saves the model by default.
 
 MLflow Model Registry allows to assign the registered model to any of stages - Stage, Production and Archive. While registering a model to Model Registry, a new model name can be added or an existing one can be selected. If an existing one is selected, a new version of the model is created automatically.
 
-![5registermodel](./img/5registermodel.png)
-![5registermodel2](./img/5registermodel2.png)
-![5registermodel3](./img/5registermodel3.png)
-![5registermodel4](./img/5registermodel4.png)
+- Register Model
+  ![5registermodel](./img/5registermodel.png)
+
+- ![5registermodel2](./img/5registermodel2.png)
+
+- ![5registermodel3](./img/5registermodel3.png)
+
+- ![5registermodel4](./img/5registermodel4.png)
 
 All these activities can be performed on UI as well as with the Python APIs provided by mlflow client.
 
 The deployment engineers then take the models from the Registry to deploy. CICD can also be implemented to make the deployment process automated.
+
+- Run a model
+- ![RunModel](./img/RunModel.png)
+
+- Get a 'run' List which has the model details
+- ![GetModelRunIds](./img/GetModelRunIds.png)
+
+- From UI we can get the same results
+- ![selectModelfromUI](./img/selectModelfromUI.png)
 
 ## MLflow in Practice
 
