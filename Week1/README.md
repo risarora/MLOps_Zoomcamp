@@ -128,7 +128,7 @@ Now run `ssh short-name-of-your-choice` to quickly connect to the ubuntu server.
 
 - To ensure docker-compose is called from soft directory from wherever we call, we need to edit .bashrc file.
   ```sh
-  nano ~/.bashrc
+  vi ~/.bashrc
   export PATH="${HOME}/soft:${PATH}"
   source .bashrc
   ```
@@ -220,7 +220,7 @@ PS C:\Windows\System32>
   cd notebooks
   ```
 
-- The notebooks are hosted on the server. However to access them locally we need to do the port forwarding that can be easily done in VSCode. Open Ports section next to terminal in VSCode and enter 8888 as port for source and enter. This will add the port to allow traffic.
+  - The notebooks are hosted on the server. However to access them locally we need to do the port forwarding that can be easily done in VSCode. Open Ports section next to terminal in VSCode and enter 8888 as port for source and enter. This will add the port to allow traffic.
 - Next open jupyter notebook
   ```sh
   jupyter notebook
