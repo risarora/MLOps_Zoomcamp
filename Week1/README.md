@@ -221,6 +221,7 @@ PS C:\Windows\System32>
   ```
 
   - The notebooks are hosted on the server. However to access them locally we need to do the port forwarding that can be easily done in VSCode. Open Ports section next to terminal in VSCode and enter 8888 as port for source and enter. This will add the port to allow traffic.
+
 - Next open jupyter notebook
   ```sh
   jupyter notebook

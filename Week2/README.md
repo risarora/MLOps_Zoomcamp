@@ -14,6 +14,8 @@
   - [MLOps Zoomcamp 2.5 - Model registry](#mlops-zoomcamp-25---model-registry)
   - [MLflow in Practice](#mlflow-in-practice)
   - [MLflow: benefits, limitations and alternatives](#mlflow-benefits-limitations-and-alternatives)
+  - [2.6 ec2 with rds and s3](#26-ec2-with-rds-and-s3)
+  - [2.7 Issues](#27-issues)
 
 # What is experiment tracking?
 
@@ -391,3 +393,11 @@ Let us consider following architectural components of mlflow. A mlflow tracking 
 - Comet.ai
 - Weights and Biases
 - etc
+
+## 2.6 ec2 with rds and s3
+
+https://www.youtube.com/watch?v=1ykg4YmbFVA&list=PL3MmuxUbc_hIUISrluw_A7wDSmfOhErJK
+
+## 2.7 Issues
+
+![alt text](./img/IssuesRunningMLFlowinSharedEnv.png)
